@@ -4,13 +4,15 @@ import Header from "@/components/ui/Header";
 import PageTransition from "@/components/ui/PageTransition";
 import StairTransition from "@/components/ui/StairTransition";
 
-const jetBrains_Mono = JetBrains_Mono({ subsets: ["latin"],weight:["100","200","300","400","500","600","700"],
-  variable: "--font-jetBrains_Mono" ,
- });
+const jetBrains_Mono = JetBrains_Mono({
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700"],
+  variable: "--font-jetBrains_Mono",
+});
 
 export const metadata = {
   title: "Joy Dhar",
-  description: "Joy Dhar's Portfolio  Website || Software Engineer || Frontend Developer",  
+  description: "Joy Dhar's Portfolio Website || Software Engineer || Frontend Developer",
 };
 
 export default function RootLayout({ children }) {
@@ -20,9 +22,9 @@ export default function RootLayout({ children }) {
         <Header />
         <PageTransition>
           <StairTransition />
-       {children}
+          {children}
         </PageTransition>
-        </body>
+      </body>
     </html>
   );
 }

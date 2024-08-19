@@ -18,18 +18,19 @@ module.exports = {
         lg: '960px',
         xl: '1200px',
       },
-      fontFamily: {
-       primary: "var(--font-jetBrains_Mono)",
-      },
+    },
+    fontFamily: {
+      primary: "var(--font-jetBrains_Mono)",
+      sans: ['Inter', 'sans-serif'],
     },
     extend: {
       colors: {
         primary: "#1c1c22",
-        accent:{
-          DEFAULT:"#f3f3f3",
-          hover:"#00e187"
-        }
+        accent: {
+          DEFAULT: "#f3f3f3",
+          hover: "#00e187",
         },
+      },
       keyframes: {
         "accordion-down": {
           from: { height: "0" },
@@ -47,4 +48,4 @@ module.exports = {
     },
   },
   plugins: [require("tailwindcss-animate")],
-}
+};
